@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dra. Lupe Fonseca - 34 años transformando vidas en Barranquilla. Psiquiatría que entiende tu mente y cuida tu bienestar.">
+    <title>Dra. Lupe Fonseca Ψ | Salud Mental con 34 Años de Experiencia</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Smooth Scroll Library -->
+    <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+    
+    <!-- GSAP - Hollywood Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen Cinematográfico -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loader-circle"></div>
+            <div class="loader-text">
+                <span class="loader-letter">Ψ</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Custom -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Particles Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Botón WhatsApp Flotante -->
+    <a href="https://wa.me/573116870095" class="whatsapp-premium magnetic" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Agenda tu Consulta</span>
+    </a>
+
+    <!-- Header con navegación -->
+    <header class="header-cinematic">
+        <nav class="container">
+            <div class="logo parallax-element" data-speed="0.5">
+                LUPE FONSECA <small>Ψ</small>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                <li class="nav-item"><a href="#juvenil" class="nav-link">Prevención Joven</a></li>
+                <li class="nav-item"><a href="#checklist" class="nav-link">Autoevaluación</a></li>
+                <li class="nav-item"><a href="https://wa.me/573116870095" class="cta-mini magnetic">Agendar Cita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section - Parallax -->
+    <section id="inicio" class="hero-cinematic">
+        <div class="hero-bg-gradient"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="top-tag reveal-text">Transformando vidas desde 1990 en Barranquilla</span>
+                <h1 class="hero-title">
+                    <span class="line line-1">Tu mente merece</span>
+                    <span class="line line-2 highlight">el mejor cuidado.</span>
+                </h1>
+                <p class="hero-description reveal-text">Psiquiatría moderna que combina ciencia, experiencia y humanidad. Porque entender tu cerebro es el primer paso para recuperar tu bienestar.</p>
+                <div class="hero-actions">
+                    <a href="#checklist" class="btn btn-primary magnetic">
+                        <span>Comienza aquí</span>
+                        <div class="btn-bg"></div>
+                    </a>
+                    <a href="#especialidades" class="btn btn-outline magnetic">
+                        <span>Conoce más</span>
+                        <div class="btn-bg"></div>
+                    </a>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge-item reveal-text">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificada en Psiquiatría</span>
+                    </div>
+                    <div class="badge-item reveal-text">
+                        <i class="fas fa-user-shield"></i>
+                        <span>Confidencialidad Garantizada</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual parallax-element" data-speed="0.3">
+                <div class="authority-badge floating">
+                    <div class="badge-glow"></div>
+                    <div class="circle-inner">
+                        <span class="num counter" data-target="34">0</span>
+                        <span class="lbl">AÑOS</span>
+                        <span class="sublbl">de Experiencia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-text">Descubre más</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Condiciones - Stagger Animation -->
+    <section id="especialidades" class="section conditions-section">
+        <div class="container">
+            <div class="section-intro">
+                <h2 class="title-main split-text">¿Con qué puedo ayudarte?</h2>
+                <p class="subtitle reveal-text">Cada condición es única, cada tratamiento es personalizado. Aquí encontrarás el apoyo que necesitas.</p>
+            </div>
+            
+            <div class="conditions-grid">
+                <div class="condition-card magnetic-light" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="condition-icon">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                    <h3>Depresión</h3>
+                    <p class="condition-friendly">Cuando la tristeza no se va y todo se siente cuesta arriba.</p>
+                    <div class="symptoms-list">
+                        <span class="symptom-tag">Tristeza constante</span>
+                        <span class="symptom-tag">Falta de energía</span>
+                        <span class="symptom-tag">Pérdida de interés</span>
+                    </div>
+                    <details class="medical-details">
+                        <summary>Ver explicación médica</summary>
+                        <p>La depresión mayor involucra disfunción en la neuroplasticidad y desequilibrios en neurotransmisores como serotonina y noradrenalina. Tratamiento con ISRS y moduladores específicos.</p>
+                    </details>
+                </div>
+
+                <div class="condition-card magnetic-light" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="condition-icon sage">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3>Trastorno Bipolar</h3>
+                    <p class="condition-friendly">Cuando tus emociones van de un extremo al otro sin control.</p>
+                    <div class="symptoms-list">
+                        <span class="symptom-tag">Cambios de ánimo extremos</span>
+                        <span class="symptom-tag">Períodos de euforia</span>
+                        <span class="symptom-tag">Episodios depresivos</span>
+                    </div>
+                    <details class="medical-details">
+                        <summary>Ver explicación médica</summary>
+                        <p>Manejo de disregulación mitocondrial y sistemas de señalización del calcio. Control con litio, estabilizadores del ánimo y antipsicóticos atípicos según la fase.</p>
+                    </details>
+                </div>
+
+                <div class="condition-card magnetic-light" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="condition-icon midnight">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Ansiedad</h3>
+                    <p class="condition-friendly">Cuando la preocupación se apodera de tu día a día.</p>
+                    <div class="symptoms-list">
+                        <span class="symptom-tag">Nerviosismo constante</span>
+                        <span class="symptom-tag">Palpitaciones</span>
+                        <span class="symptom-tag">Pensamientos acelerados</span>
+                    </div>
+                    <details class="medical-details">
+                        <summary>Ver explicación médica</summary>
+                        <p>Los trastornos de ansiedad implican hiperactivación del sistema nervioso simpático. Tratamiento integral con ansiolíticos, terapia cognitiva y técnicas de regulación.</p>
+                    </details>
+                </div>
+
+                <div class="condition-card magnetic-light" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="condition-icon purple">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Esquizofrenia</h3>
+                    <p class="condition-friendly">Cuando la realidad se distorsiona y necesitas recuperar claridad.</p>
+                    <div class="symptoms-list">
+                        <span class="symptom-tag">Alucinaciones</span>
+                        <span class="symptom-tag">Delirios</span>
+                        <span class="symptom-tag">Desorganización</span>
+                    </div>
+                    <details class="medical-details">
+                        <summary>Ver explicación médica</summary>
+                        <p>Abordaje mediante bloqueo selectivo de receptores D2 y 5-HT2A. Neurolépticos de segunda generación para recuperación funcional y social con diagnóstico temprano.</p>
+                    </details>
+                </div>
+
+                <div class="condition-card magnetic-light" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="condition-icon orange">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Trastorno de Pánico</h3>
+                    <p class="condition-friendly">Ataques repentinos de miedo intenso que parecen incontrolables.</p>
+                    <div class="symptoms-list">
+                        <span class="symptom-tag">Crisis de pánico</span>
+                        <span class="symptom-tag">Miedo a morir</span>
+                        <span class="symptom-tag">Evitación</span>
+                    </div>
+                    <details class="medical-details">
+                        <summary>Ver explicación médica</summary>
+                        <p>Respuesta exagerada del sistema de alarma cerebral. Tratamiento con ISRS, benzodiacepinas de respaldo y terapia de exposición gradual.</p>
+                    </details>
+                </div>
+
+                <div class="condition-card magnetic-light" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="condition-icon blue">
+                        <i class="fas fa-person-rays"></i>
+                    </div>
+                    <h3>Estrés Postraumático</h3>
+                    <p class="condition-friendly">Cuando un evento del pasado sigue afectando tu presente.</p>
+                    <div class="symptoms-list">
+                        <span class="symptom-tag">Recuerdos intrusivos</span>
+                        <span class="symptom-tag">Pesadillas</span>
+                        <span class="symptom-tag">Hipervigilancia</span>
+                    </div>
+                    <details class="medical-details">
+                        <summary>Ver explicación médica</summary>
+                        <p>Alteración en procesamiento de memoria traumática en amígdala e hipocampo. Tratamiento con ISRS, prazosin para pesadillas y terapias especializadas.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué elegirme - Parallax -->
+    <section class="why-section parallax-section">
+        <div class="parallax-bg" data-speed="0.5"></div>
+        <div class="container">
+            <div class="why-grid">
+                <div class="why-content">
+                    <span class="mini-tag reveal-text">Experiencia que marca la diferencia</span>
+                    <h2 class="split-text">No solo trato síntomas, entiendo personas.</h2>
+                    <p class="reveal-text">En 34 años he aprendido que detrás de cada diagnóstico hay una historia única. Mi enfoque combina la precisión de la ciencia médica con la calidez del trato humano.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item reveal-slide">
+                            <i class="fas fa-comments"></i>
+                            <div>
+                                <h4>Escucha activa</h4>
+                                <p>Tiempo suficiente para entender tu situación completa</p>
+                            </div>
+                        </div>
+                        <div class="feature-item reveal-slide">
+                            <i class="fas fa-flask"></i>
+                            <div>
+                                <h4>Diagnóstico preciso</h4>
+                                <p>Evaluación exhaustiva basada en evidencia científica</p>
+                            </div>
+                        </div>
+                        <div class="feature-item reveal-slide">
+                            <i class="fas fa-hand-holding-heart"></i>
+                            <div>
+                                <h4>Tratamiento personalizado</h4>
+                                <p>Plan adaptado a tu vida, tu contexto y tus necesidades</p>
+                            </div>
+                        </div>
+                        <div class="feature-item reveal-slide">
+                            <i class="fas fa-shield-check"></i>
+                            <div>
+                                <h4>Seguimiento continuo</h4>
+                                <p>Acompañamiento en cada etapa de tu recuperación</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-visual">
+                    <div class="stats-box floating">
+                        <div class="stat">
+                            <span class="stat-number counter" data-target="34">0</span>
+                            <span class="stat-label">Años de práctica</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number counter" data-target="5000">0</span>
+                            <span class="stat-plus">+</span>
+                            <span class="stat-label">Pacientes atendidos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number counter" data-target="100">0</span>
+                            <span class="stat-percent">%</span>
+                            <span class="stat-label">Compromiso</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prevención Juvenil -->
+    <section id="juvenil" class="section-soft">
+        <div class="container">
+            <div class="juvenil-container glass-morphism">
+                <div class="glass-reflection"></div>
+                <div class="juvenil-header">
+                    <i class="fas fa-heart-circle-check"></i>
+                    <h2 class="split-text">Cuidando la salud mental desde temprano</h2>
+                    <p class="reveal-text">La adolescencia no tiene que ser un tormento. Hay soluciones reales.</p>
+                </div>
+                <div class="juvenil-content-grid">
+                    <div class="text-side">
+                        <p class="reveal-text">Si eres padre/madre y notas que tu hijo(a) está diferente —se aísla, ha perdido interés en todo, tiene cambios bruscos de humor o habla de desesperanza— <strong>actuar a tiempo puede salvar su vida</strong>.</p>
+                        
+                        <p class="reveal-text">La depresión juvenil no es "una etapa". Es una condición médica real que requiere atención profesional. Y sí, tiene solución.</p>
+                        
+                        <div class="youth-benefits">
+                            <h4>¿Por qué es crucial la intervención temprana?</h4>
+                            <ul class="benefit-list">
+                                <li class="reveal-slide">Previene que se vuelva un problema crónico en la adultez</li>
+                                <li class="reveal-slide">Protege el desarrollo cerebral en una etapa crítica</li>
+                                <li class="reveal-slide">Es la mejor prevención contra pensamientos suicidas</li>
+                                <li class="reveal-slide">Les devuelve la capacidad de disfrutar su vida</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cta-side">
+                        <div class="alert-box-soft pulse-alert">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p><strong>Señales de alerta:</strong> Aislamiento social, llanto frecuente, irritabilidad extrema, cambios en el sueño o apetito, caída en el rendimiento escolar, menciones de "no querer estar aquí".</p>
+                        </div>
+                        <a href="https://wa.me/573116870095" class="btn btn-accent magnetic">
+                            <span>Hablar con la Dra. Lupe</span>
+                            <div class="btn-bg"></div>
+                        </a>
+                        <p class="small-note">Consulta confidencial. Ambiente seguro y sin juicios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <h2 class="section-title-small split-text">Historias de recuperación</h2>
+            <p class="testimonials-intro reveal-text">Lo que dicen quienes han encontrado el camino de vuelta.</p>
+            <div class="testimonials-slider">
+                <div class="testimonial-item magnetic-light">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Llegué sin esperanza, convencida de que así era mi vida. La Dra. Lupe me explicó lo que pasaba en mi cerebro de una forma que finalmente tenía sentido. Hoy tengo la vida que creí imposible."</p>
+                    <div class="testimonial-footer">
+                        <span class="t-name">María C.</span>
+                        <span class="t-condition">• Depresión Mayor</span>
+                    </div>
+                </div>
+                <div class="testimonial-item magnetic-light">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Después de 3 psiquiatras que no daban con mi diagnóstico, la Dra. Lupe identificó mi trastorno bipolar en la primera cita. Su experiencia se nota. 34 años no se improvisan."</p>
+                    <div class="testimonial-footer">
+                        <span class="t-name">Andrés M.</span>
+                        <span class="t-condition">• Trastorno Bipolar</span>
+                    </div>
+                </div>
+                <div class="testimonial-item magnetic-light">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Mi hijo de 16 años estaba destruido. Gracias a la intervención temprana de la doctora, hoy está de vuelta. Es otro. Agradecida de por vida."</p>
+                    <div class="testimonial-footer">
+                        <span class="t-name">Patricia R.</span>
+                        <span class="t-condition">• Madre de paciente adolescente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklist -->
+    <section id="checklist" class="section alt-bg">
+        <div class="container">
+            <div class="checklist-card glass-dark">
+                <div class="glass-reflection"></div>
+                <div class="checklist-header">
+                    <i class="fas fa-clipboard-list"></i>
+                    <h3 class="split-text">¿Cómo te has sentido últimamente?</h3>
+                    <p class="checklist-intro reveal-text">Responde con honestidad. Esta información me ayudará a entender mejor tu situación.</p>
+                </div>
+                
+                <form id="checklistForm" class="checks-grid">
+                    <label class="check-item magnetic-light">
+                        <input type="checkbox" value="Tristeza o vacío persistente" id="check1">
+                        <span class="custom-check"></span>
+                        <span class="check-label">Tristeza o vacío que no se va</span>
+                    </label>
+                    <label class="check-item magnetic-light">
+                        <input type="checkbox" value="Problemas de sueño" id="check2">
+                        <span class="custom-check"></span>
+                        <span class="check-label">Duermo muy poco o demasiado</span>
+                    </label>
+                    <label class="check-item magnetic-light">
+                        <input type="checkbox" value="Ansiedad constante" id="check3">
+                        <span class="custom-check"></span>
+                        <span class="check-label">Angustia o nervios todo el tiempo</span>
+                    </label>
+                    <label class="check-item magnetic-light">
+                        <input type="checkbox" value="Agotamiento sin razón" id="check4">
+                        <span class="custom-check"></span>
+                        <span class="check-label">Me siento agotado(a) sin razón</span>
+                    </label>
+                    <label class="check-item magnetic-light">
+                        <input type="checkbox" value="Pensamientos negativos recurrentes" id="check5">
+                        <span class="custom-check"></span>
+                        <span class="check-label">Pensamientos oscuros frecuentes</span>
+                    </label>
+                    <label class="check-item magnetic-light">
+                        <input type="checkbox" value="Irritabilidad extrema" id="check6">
+                        <span class="custom-check"></span>
+                        <span class="check-label">Todo me irrita o molesta</span>
+                    </label>
+                    <label class="check-item magnetic-light">
+                        <input type="checkbox" value="Pérdida de interés en actividades" id="check7">
+                        <span class="custom-check"></span>
+                        <span class="check-label">Ya nada me interesa o me da placer</span>
+                    </label>
+                    <label class="check-item magnetic-light">
+                        <input type="checkbox" value="Dificultad para concentrarse" id="check8">
+                        <span class="custom-check"></span>
+                        <span class="check-label">No puedo concentrarme o decidir</span>
+                    </label>
+                    <label class="check-item magnetic-light">
+                        <input type="checkbox" value="Aislamiento social" id="check9">
+                        <span class="custom-check"></span>
+                        <span class="check-label">Evito a las personas</span>
+                    </label>
+                </form>
+                
+                <div class="checklist-footer">
+                    <p class="privacy-note"><i class="fas fa-lock"></i> Tus respuestas son privadas y confidenciales</p>
+                    <button onclick="enviarWhatsApp()" class="btn btn-dark magnetic">
+                        <span>Enviar a la Dra. Lupe por WhatsApp</span>
+                        <div class="btn-bg"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="split-text">Da el primer paso hoy</h2>
+                <p class="reveal-text">No tienes que seguir cargando esto solo(a). Hay ayuda profesional, hay soluciones reales, y hay esperanza.</p>
+                <a href="https://wa.me/573116870095" class="btn btn-primary btn-large magnetic">
+                    <span><i class="fab fa-whatsapp"></i> Agendar mi consulta ahora</span>
+                    <div class="btn-bg"></div>
+                </a>
+                <p class="cta-subtext reveal-text">Respuesta en menos de 24 horas • Barranquilla, Colombia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>Ψ Dra. Lupe Fonseca</h3>
+                <p>Médica Psiquiatra</p>
+                <p class="footer-desc">Especialista en salud mental con 34 años de experiencia en Barranquilla. Comprometida con tu bienestar integral.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#juvenil">Prevención Juvenil</a></li>
+                    <li><a href="#checklist">Autoevaluación</a></li>
+                    <li><a href="https://wa.me/573116870095">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-phone"></i> +57 311 6870095</p>
+                <p><i class="fas fa-map-marker-alt"></i> Barranquilla, Colombia</p>
+                <p><i class="fas fa-clock"></i> Lun - Vie: 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 1990 - 2025 Dra. Lupe Fonseca. Todos los derechos reservados.</p>
+            <p class="legal-note">Este sitio tiene fines informativos. No reemplaza una consulta médica profesional.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Cinematográfico -->
+    <script src="script.js"></script>
+</body>
+</html>
